@@ -3,5 +3,8 @@
 mylist = ["banana", "cherry", "apple"]
 print(mylist)
 
-mylist2 = list()
-print(mylist2)
+item = mylist[-2]
+print(item)
+
+for i in mylist:
+    print(i)
