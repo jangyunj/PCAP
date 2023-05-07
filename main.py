@@ -1,7 +1,15 @@
-# List comprehension
+# tuple - ordered collection - objects that belong together
+#       - cannot be changed
+#       - needs to be more than one OR have comma at the end if it only has one item
 
-mylist = [1, 2, 3, 4, 5, 6]
-mylist_squared = [i*i for i in mylist]  # [Expression; For in Loop]
+mytuple = "Max",
+print(mytuple)
 
-print(mylist)
-print(mylist_squared)
+print(type(mytuple))
+
+
+mytuple1 = tuple(["Max", 28, "Boston"])
+print(mytuple1)
+
+item = mytuple1[2]
+print(item)
