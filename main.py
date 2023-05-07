@@ -1,13 +1,7 @@
-list_org = ["banana", "cherry", "apple"]
-# list_copy = list_org                    #both lists refer to the same memory location
-# list_copy.append("lemon")
+# List comprehension
 
-list_copy = list_org.copy()  # makes a copy
-list_copy.append("lemon")
+mylist = [1, 2, 3, 4, 5, 6]
+mylist_squared = [i*i for i in mylist]  # [Expression; For in Loop]
 
-list_copy = list(list_org)  # makes a copy
-
-list_copy = list_org[:]  # Slices from beginning to end --makes a copy
-
-print(list_copy)
-print(list_org)
+print(mylist)
+print(mylist_squared)
