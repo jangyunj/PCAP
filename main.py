@@ -1,10 +1,10 @@
-#lists
-
-mylist = [5, 6, 1, 8, 14,2]
-
-
-item = mylist.sort()
+mylist = [0] * 5
 print(mylist)
 
-new_list = sorted(mylist)
+mylist2 = [1, 2, 3, 4, 5]
+new_list = mylist + mylist2
 print(new_list)
+
+
+
+
