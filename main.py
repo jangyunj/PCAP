@@ -1,10 +1,13 @@
-mylist = [0] * 5
-print(mylist)
+list_org = ["banana", "cherry", "apple"]
+# list_copy = list_org                    #both lists refer to the same memory location
+# list_copy.append("lemon")
 
-mylist2 = [1, 2, 3, 4, 5]
-new_list = mylist + mylist2
-print(new_list)
+list_copy = list_org.copy()  # makes a copy
+list_copy.append("lemon")
 
+list_copy = list(list_org)  # makes a copy
 
+list_copy = list_org[:]  # Slices from beginning to end --makes a copy
 
-
+print(list_copy)
+print(list_org)
