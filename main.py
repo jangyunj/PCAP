@@ -1,17 +1,10 @@
-mydict = {"name": "Max", "age": 28, "city": "New York"}
-print(mydict)
+dict1 = {3:9, 6:36, 9:81}
+print(dict1)
 
-mydict["email"] = "max@abc.com"
-print(mydict)
+value = dict1[3] #use ACTUAL value of keys
+print(value)
 
-mydict["email"] = "coolmax@abc.com"
-print(mydict)
+mytuple = (8, 7)
+mydict = {mytuple: 15} #tuples can be used as keys bc they are immutable #lists cannot
 
-del mydict["name"]
-print(mydict)
-
-mydict.pop("age")
-print(mydict)
-
-mydict.popitem()
 print(mydict)
