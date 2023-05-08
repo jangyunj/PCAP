@@ -1,10 +1,19 @@
-dict1 = {3:9, 6:36, 9:81}
-print(dict1)
+#Set - unordered and mutable
+#    - does not allow duplicates; gets rid of duplicates
+#    - no key value pairs, just single elements
 
-value = dict1[3] #use ACTUAL value of keys
-print(value)
+# myset = set("Hello") #you can find out how many unique characters are here
+# print(myset)
 
-mytuple = (8, 7)
-mydict = {mytuple: 15} #tuples can be used as keys bc they are immutable #lists cannot
+myset = set()
+myset.add(1)
+myset.add(2)
+myset.add(3)
 
-print(mydict)
+print(myset)
+
+for i in myset: #iterate over each elements
+    print(i)
+
+if 2 in myset:
+    print("yes")
