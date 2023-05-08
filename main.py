@@ -1,19 +1,12 @@
-#Set - unordered and mutable
-#    - does not allow duplicates; gets rid of duplicates
-#    - no key value pairs, just single elements
+odds = {1, 3, 5, 7, 9}
+evens = {0, 2, 4, 6, 8}
+primes = {2, 3, 5, 7}
 
-# myset = set("Hello") #you can find out how many unique characters are here
-# print(myset)
+u1 = odds.union(evens) #combination - no duplicates of same numbers
+print("union: ", u1)
 
-myset = set()
-myset.add(1)
-myset.add(2)
-myset.add(3)
+u2 = odds.union(primes) #combination - no duplicates of same numbers
+print("union: ", u2)
 
-print(myset)
-
-for i in myset: #iterate over each elements
-    print(i)
-
-if 2 in myset:
-    print("yes")
+i = evens.intersection(primes) #commonality
+print(f"intersection: {i}")
