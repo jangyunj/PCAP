@@ -1,15 +1,17 @@
-# tuple - ordered collection - objects that belong together
-#       - cannot be changed - IMMUTABLE
-#       - needs to be more than one OR have comma at the end if it only has one item
-#       - can be efficient when working with large data
+mydict = {"name": "Max", "age": 28, "city": "New York"}
+print(mydict)
 
-import sys
+mydict["email"] = "max@abc.com"
+print(mydict)
 
-my_list = [1, 2, 3]
-my_tuple = (1, 2, 3)
-print(sys.getsizeof(my_list), "bytes")
-print(sys.getsizeof(my_tuple), "bytes")
+mydict["email"] = "coolmax@abc.com"
+print(mydict)
 
-import timeit
-print(timeit.timeit(stmt="[1, 2, 3]", number=1000000)) #TIME OF one million times we want to create this list
-print(timeit.timeit(stmt="(1, 2, 3)", number=1000000)) #TIME OF one million times we want to create this tuple
+del mydict["name"]
+print(mydict)
+
+mydict.pop("age")
+print(mydict)
+
+mydict.popitem()
+print(mydict)
