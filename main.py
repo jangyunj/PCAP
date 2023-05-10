@@ -1,16 +1,12 @@
-greeting = "Hello"
+my_string = "Hello World"
+print(my_string.startswith("H"))
+print(my_string.startswith("Hello"))
+print(my_string.endswith("World"))
 
-for i in greeting:
-    print(i)
+print(my_string.find("o"))
+print(my_string.find("lo"))
+print(my_string.find("p"))  #cannot find so results in -1
 
-if "ell" in greeting:
-    print("yes")
-else:
-    print("no")
+print(my_string.count("l"))
 
-my_string = "      Hello World     "
-my_string = my_string.strip()  #You have to assign it to the original one (make copy), because string is IMMUTABLE
-print(my_string)
-
-print(my_string.upper())
-print(my_string.lower())
+print(my_string.replace("Hello", "Hi"))
