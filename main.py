@@ -1,12 +1,15 @@
-my_string = "Hello World"
-print(my_string.startswith("H"))
-print(my_string.startswith("Hello"))
-print(my_string.endswith("World"))
+my_string = "How are you"
+my_list = my_string.split()                #Each word becomes an element in a list
+#SAME AS: my_list = my_string.split(" ")   #default delimiter is a space " "  
+print(my_list)
 
-print(my_string.find("o"))
-print(my_string.find("lo"))
-print(my_string.find("p"))  #cannot find so results in -1
+#---------------------------------------
+my_string = "How,are,you"
+my_list = my_string.split(",")
+print(my_list)
 
-print(my_string.count("l"))
+new_string = " ".join(my_list)            #Joins the list back into strings
+print(new_string)
 
-print(my_string.replace("Hello", "Hi"))
+
+
