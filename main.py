@@ -1,15 +1,17 @@
-my_string = "How are you"
-my_list = my_string.split()                #Each word becomes an element in a list
-#SAME AS: my_list = my_string.split(" ")   #default delimiter is a space " "  
-print(my_list)
+from timeit import default_timer as timer
 
-#---------------------------------------
-my_string = "How,are,you"
-my_list = my_string.split(",")
-print(my_list)
+my_list = ['a'] * 6    #Creates a list with 6 elements
 
-new_string = " ".join(my_list)            #Joins the list back into strings
-print(new_string)
+start = timer()
 
+my_string = ''.join(my_list) #Good python code
+print(my_string)
+
+stop = timer()
+print(start-stop)
 
 
+
+my_list = ['a'] * 6
+my_string = ''.join(my_list)
+print(my_string)
