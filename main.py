@@ -1,9 +1,7 @@
-my_string = "Hello World"
-substring = my_string[:] #goes all the way from beginning to end
-print(substring)
+greeting = "Hello"
+name = "Tom"
+sentence = greeting + " " + name
+print(sentence)
 
-substring = my_string[::2] #steps by 2
-print(substring)
-
-substring = my_string[::-1] #goes BACKWARDS- reverse
-print(substring)
+sentence1 = f"{greeting} {name}"
+print(sentence1) 
