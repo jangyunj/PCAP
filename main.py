@@ -1,5 +1,17 @@
-from collections import namedtuple
+from collections import OrderedDict
 
-Point = namedtuple('Point', 'x,y')
-pt = Point(1, 4)
-print(pt.x, pt.y)
+ordered = OrderedDict()
+ordered['b'] = 2
+ordered['c'] = 3
+ordered['d'] = 4
+ordered['a'] = 1
+print(ordered)
+
+#---OR---
+
+ordered = {}
+ordered['b'] = 2
+ordered['c'] = 3
+ordered['d'] = 4
+ordered['a'] = 1
+print(ordered)
