@@ -1,17 +1,10 @@
-from collections import OrderedDict
+from collections import defaultdict
 
-ordered = OrderedDict()
-ordered['b'] = 2
-ordered['c'] = 3
-ordered['d'] = 4
-ordered['a'] = 1
-print(ordered)
+#Returns specific type of value we specify
+d = defaultdict(int)
+d = defaultdict(float)
+d = defaultdict(list)
 
-#---OR---
-
-ordered = {}
-ordered['b'] = 2
-ordered['c'] = 3
-ordered['d'] = 4
-ordered['a'] = 1
-print(ordered)
+d['a'] = 1
+d['b'] = 2
+print(d['c'])
