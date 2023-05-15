@@ -1,11 +1,6 @@
-print("python", end=" ")
-print("rules", end="!")
-print("hello")             #By default, Python's End Parameter is '\n'
-print("world")
+i = ""
+while i in "          ":
+    print("Python", end=i)
 
-''' RESULT: 
-
-python@rules!hello
-world
-
-'''
+#Result is endless printing:
+# PythonPythonPythonPythonPythonPythonPythonPythonPython...
